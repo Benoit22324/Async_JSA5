@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Media Device</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <main>
+        <p class="warning">Le changement de périphérique dans le formulaire n'affecte pas le résultat. Seul le périphérique autorisé au début fonctionne.</p>
+        <form id="periForm">
+            <select name="periphs" id="periphs"></select>
+            <button>Valider</button>
+        </form>
+        <p id="error" class="warning" hidden></p>
+
+        <div>
+            <video id="video" hidden></video>
+        </div>
+        <button id="takePhoto" hidden>Prendre une photo</button>
+
+        <div>
+            <canvas id="canvas" hidden></canvas>
+        </div>
+        <a id="download" href="#" hidden>Sauvegarder l'image</a>
+    </main>
+</body>
+</html>
